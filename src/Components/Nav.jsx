@@ -5,7 +5,34 @@ import { useState, useEffect } from "react";
 
 function Nav () {
     const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem('darkMode') === 'true');
+    // const [showLinks, setShowLinks] = useState(false);
 
+  // Add event listeners to the hamburger and links
+  useEffect(() => {
+    const hamburger = document.querySelector("#hamburger");
+    const menu = document.querySelector("#menu");
+    const hLinks = document.querySelectorAll("#hLink");
+
+    const handleClick = () => {
+      menu.classList.toggle("hidden");
+      hamburger.classList.toggle("bg-white");
+    };
+
+    hamburger.addEventListener("click", handleClick);
+
+    hLinks.forEach((link) => {
+      link.addEventListener("click", handleClick);
+    });
+
+    // Remove event listeners when the component unmounts
+    return () => {
+      hamburger.removeEventListener("click", handleClick);
+
+      hLinks.forEach((link) => {
+        link.removeEventListener("click", handleClick);
+      });
+    };
+  }, []);
     function toggleDarkMode() {
       setIsDarkMode(!isDarkMode);
     }

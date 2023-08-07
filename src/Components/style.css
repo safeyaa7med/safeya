@@ -2,3 +2,12 @@
     width: 25%;
     font-size: 12px;
 }
+/* Styles for screens with a width of 600px or less */
+@media screen and (max-width: 600px) {
+    .swal-wide {
+        width: 60%;
+    }
+  }
+  
+
+  

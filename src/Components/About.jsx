@@ -1,4 +1,4 @@
-import portrait from "../img/portrait.png";
+import a7med from "../img/a7med.jpg";
 import dots from "../img/dots.png";
 
 function About () {
@@ -8,7 +8,7 @@ function About () {
           <div className="relative">
             <img className="h-1/4 absolute top-0 left-0 -z-10" src={dots} />
             <div className="h-full rounded-full overflow-hidden">
-              <img src={portrait} alt="" />
+              <img src={a7med} alt="" />
             </div>
           </div>
           <div className="my-auto flex flex-col gap-3">

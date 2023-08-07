@@ -26,7 +26,7 @@ function Services () {
               </h1>
               <p className="text-gray-400">
                 Creating and structuring web pages, understanding of semantic
-                markup, knowledge of accessibility best practices.
+                markup, knowledge of accessibility best practices focused on the overall experience a user has with a product or service.
               </p>
               <a className="text-indigo-600 font-semibold text-sm" href="">
                 Read More
