@@ -1,6 +1,24 @@
-.swal-wide {
-    width: 25%;
-    font-size: 12px;
+.swal2-icon-show  {
+    display: none!important;
+}
+.swal2-popup {
+    width: 30%;
+}
+.swal2-title {
+    direction: rtl;
+    font-size: 20px;
+    font-weight: 600;
+}
+.swal2-confirm,.swal2-cancel {
+    font-size: 15px!important;
+}
+.swal2-actions {
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+    flex-direction: row-reverse;
+    gap: 5rem;
 }
 /* Styles for screens with a width of 600px or less */
 @media screen and (max-width: 600px) {

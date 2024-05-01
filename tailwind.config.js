@@ -12,6 +12,9 @@ export default {
       },
       spacing: {
         "big": "48rem"
+      },
+      zIndex: {
+        '100': '100',
       }
     },
     screens: {
